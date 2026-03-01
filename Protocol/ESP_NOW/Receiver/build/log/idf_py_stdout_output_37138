@@ -1,0 +1,18 @@
+Command: ninja all
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /home/shan1234/Desktop/esp_projects/ESPNOW/ESPNOW_Reciver/build/bootloader && /home/shan1234/.espressif/python_env/idf6.1_py3.12_env/bin/python /home/shan1234/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/shan1234/Desktop/esp_projects/ESPNOW/ESPNOW_Reciver/build/bootloader/bootloader.bin
+Bootloader binary size 0x6610 bytes. 0x9f0 bytes (9%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ESPNOW_Reciver.c.obj
+[5/9] Linking C static library esp-idf/main/libmain.a
+[6/9] Generating esp-idf/esp_system/ld/sections.ld
+[7/9] Linking CXX executable ESPNOW_Reciver.elf
+[8/9] Generating binary image from built executable
+esptool v5.2.dev4
+Creating ESP32 image...
+Merged 3 ELF sections.
+Successfully created ESP32 image.
+Generated /home/shan1234/Desktop/esp_projects/ESPNOW/ESPNOW_Reciver/build/ESPNOW_Reciver.bin
+[9/9] cd /home/shan1234/Desktop/esp_projects/ESPNOW/ESPNOW_Reciver/build && /home/shan1234/.espressif/python_env/idf6.1_py3.12_env/bin/python /home/shan1234/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/shan1234/Desktop/esp_projects/ESPNOW/ESPNOW_Reciver/build/partition_table/partition-table.bin /home/shan1234/Desktop/esp_projects/ESPNOW/ESPNOW_Reciver/build/ESPNOW_Reciver.bin
+ESPNOW_Reciver.bin binary size 0xb1b90 bytes. Smallest app partition is 0x100000 bytes. 0x4e470 bytes (31%) free.

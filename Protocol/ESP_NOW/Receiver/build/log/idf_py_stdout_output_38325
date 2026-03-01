@@ -1,0 +1,265 @@
+Command: /home/shan1234/.espressif/python_env/idf6.1_py3.12_env/bin/python /home/shan1234/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/shan1234/Desktop/esp_projects/ESPNOW/ESPNOW_Reciver/build/ESPNOW_Reciver.elf /home/shan1234/Desktop/esp_projects/ESPNOW/ESPNOW_Reciver/build/bootloader/bootloader.elf -m '/home/shan1234/.espressif/python_env/idf6.1_py3.12_env/bin/python' '/home/shan1234/esp/esp-idf/tools/idf.py' '-p' '/dev/ttyUSB0'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0040,len:6272
+load:0x40078000,len:15848
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v6.1-dev-2441-gffb63db38b 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Feb 28 2026 19:05:21[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=187e4h (100324) map[0m
+[0;32mI (124) esp_image: segment 1: paddr=0002880c vaddr=3ffb0000 size=044f8h ( 17656) load[0m
+[0;32mI (131) esp_image: segment 2: paddr=0002cd0c vaddr=40080000 size=0330ch ( 13068) load[0m
+[0;32mI (136) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=7f98ch (522636) map[0m
+[0;32mI (323) esp_image: segment 4: paddr=000af9b4 vaddr=4008330c size=12230h ( 74288) load[0m
+[0;32mI (353) esp_image: segment 5: paddr=000c1bec vaddr=50000000 size=00028h (    40) load[0m
+[0;32mI (364) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (364) boot: Disabling RNG early entropy source...[0m
+[0;32mI (375) cpu_start: Multicore app[0m
+[0;32mI (383) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (383) cpu_start: Pro cpu start user code[0m
+[0;32mI (383) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (385) app_init: Application information:[0m
+[0;32mI (389) app_init: Project name:     ESPNOW_Reciver[0m
+[0;32mI (394) app_init: App version:      1[0m
+[0;32mI (397) app_init: Compile time:     Feb 28 2026 19:05:46[0m
+[0;32mI (402) app_init: ELF file SHA256:  e5082afff...[0m
+[0;32mI (406) app_init: ESP-IDF:          v6.1-dev-2441-gffb63db38b[0m
+[0;32mI (412) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (416) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (420) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (424) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (430) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (435) heap_init: At 3FFB89E8 len 00027618 (157 KiB): DRAM[0m
+[0;32mI (440) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (445) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (451) heap_init: At 4009553C len 0000AAC4 (42 KiB): IRAM[0m
+[0;32mI (458) spi_flash: detected chip: generic[0m
+[0;32mI (460) spi_flash: flash io: dio[0m
+[0;33mW (463) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (477) main_task: Started on CPU0[0m
+[0;32mI (487) main_task: Calling app_main()[0m
+[0;32mI (507) wifi:wifi driver task: 3ffbfee4, prio:23, stack:6656, core=0[0m
+[0;32mI (507) wifi:wifi firmware version: 3b5cc83[0m
+[0;32mI (507) wifi:wifi certification version: v7.0[0m
+[0;32mI (507) wifi:config NVS flash: enabled[0m
+[0;32mI (507) wifi:config nano formatting: disabled[0m
+[0;32mI (517) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (517) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (527) wifi:Init management short buffer num: 32[0m
+[0;32mI (527) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (537) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (537) wifi:Init static rx buffer num: 10[0m
+[0;32mI (537) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (547) wifi_init: rx ba win: 6[0m
+[0;32mI (547) wifi_init: accept mbox: 6[0m
+[0;32mI (547) wifi_init: tcpip mbox: 32[0m
+[0;32mI (557) wifi_init: udp mbox: 6[0m
+[0;32mI (557) wifi_init: tcp mbox: 6[0m
+[0;32mI (557) wifi_init: tcp tx win: 5760[0m
+[0;32mI (567) wifi_init: tcp rx win: 5760[0m
+[0;32mI (567) wifi_init: tcp mss: 1440[0m
+[0;32mI (567) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (577) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (577) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (667) wifi:mode : sta (fc:b4:67:4e:de:34)[0m
+[0;32mI (667) wifi:enable tsf[0m
+[0;32mI (667) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (667) RECEIVER: Sending Pair Request...[0m
+[0;32mI (677) RECEIVER: ACK received! Paired successfully.[0m
+[0;32mI (677) RECEIVER: Sender added as peer.[0m
+[0;32mI (1137) RECEIVER: Received -> Seq:0 Temp:25.60 Volt:12.00[0m
+[0;32mI (3137) RECEIVER: Received -> Seq:1 Temp:25.70 Volt:12.00[0m
+[0;32mI (5137) RECEIVER: Received -> Seq:2 Temp:25.80 Volt:12.00[0m
+[0;32mI (7137) RECEIVER: Received -> Seq:3 Temp:25.90 Volt:12.00[0m
+[0;32mI (9137) RECEIVER: Received -> Seq:4 Temp:26.00 Volt:12.00[0m
+[0;32mI (11137) RECEIVER: Received -> Seq:5 Temp:26.10 Volt:12.00[0m
+[0;32mI (13137) RECEIVER: Received -> Seq:6 Temp:26.20 Volt:12.00[0m
+[0;32mI (15137) RECEIVER: Received -> Seq:7 Temp:26.30 Volt:12.00[0m
+[0;32mI (17147) RECEIVER: Received -> Seq:8 Temp:26.40 Volt:12.00[0m
+[0;32mI (19137) RECEIVER: Received -> Seq:9 Temp:26.50 Volt:12.00[0m
+[0;32mI (21137) RECEIVER: Received -> Seq:10 Temp:26.60 Volt:12.00[0m
+[0;32mI (23137) RECEIVER: Received -> Seq:11 Temp:26.70 Volt:12.00[0m
+[0;32mI (25147) RECEIVER: Received -> Seq:12 Temp:26.80 Volt:12.00[0m
+[0;32mI (27147) RECEIVER: Received -> Seq:13 Temp:26.90 Volt:12.00[0m
+[0;32mI (29147) RECEIVER: Received -> Seq:14 Temp:27.00 Volt:12.00[0m
+[0;32mI (31147) RECEIVER: Received -> Seq:15 Temp:27.10 Volt:12.00[0m
+[0;32mI (33147) RECEIVER: Received -> Seq:16 Temp:27.20 Volt:12.00[0m
+[0;32mI (35147) RECEIVER: Received -> Seq:17 Temp:27.30 Volt:12.00[0m
+[0;32mI (37147) RECEIVER: Received -> Seq:18 Temp:27.40 Volt:12.00[0m
+[0;32mI (39147) RECEIVER: Received -> Seq:19 Temp:27.50 Volt:12.00[0m
+[0;32mI (41147) RECEIVER: Received -> Seq:20 Temp:27.60 Volt:12.00[0m
+[0;32mI (43147) RECEIVER: Received -> Seq:21 Temp:27.70 Volt:12.00[0m
+[0;32mI (45147) RECEIVER: Received -> Seq:22 Temp:27.80 Volt:12.00[0m
+[0;32mI (47147) RECEIVER: Received -> Seq:23 Temp:27.90 Volt:12.00[0m
+[0;32mI (49147) RECEIVER: Received -> Seq:24 Temp:28.00 Volt:12.00[0m
+[0;32mI (51147) RECEIVER: Received -> Seq:25 Temp:28.10 Volt:12.00[0m
+[0;32mI (53147) RECEIVER: Received -> Seq:26 Temp:28.20 Volt:12.00[0m
+[0;32mI (55147) RECEIVER: Received -> Seq:27 Temp:28.30 Volt:12.00[0m
+[0;32mI (57147) RECEIVER: Received -> Seq:28 Temp:28.40 Volt:12.00[0m
+[0;32mI (59147) RECEIVER: Received -> Seq:29 Temp:28.50 Volt:12.00[0m
+[0;32mI (61147) RECEIVER: Received -> Seq:30 Temp:28.60 Volt:12.00[0m
+[0;32mI (63147) RECEIVER: Received -> Seq:31 Temp:28.70 Volt:12.00[0m
+[0;32mI (65147) RECEIVER: Received -> Seq:32 Temp:28.80 Volt:12.00[0m
+[0;32mI (67147) RECEIVER: Received -> Seq:33 Temp:28.90 Volt:12.00[0m
+[0;32mI (69147) RECEIVER: Received -> Seq:34 Temp:29.00 Volt:12.00[0m
+[0;32mI (71147) RECEIVER: Received -> Seq:35 Temp:29.10 Volt:12.00[0m
+[0;32mI (73147) RECEIVER: Received -> Seq:36 Temp:29.20 Volt:12.00[0m
+[0;32mI (75147) RECEIVER: Received -> Seq:37 Temp:29.30 Volt:12.00[0m
+[0;32mI (77147) RECEIVER: Received -> Seq:38 Temp:29.40 Volt:12.00[0m
+[0;32mI (79147) RECEIVER: Received -> Seq:39 Temp:29.50 Volt:12.00[0m
+[0;32mI (81147) RECEIVER: Received -> Seq:40 Temp:29.60 Volt:12.00[0m
+[0;32mI (83147) RECEIVER: Received -> Seq:41 Temp:29.70 Volt:12.00[0m
+[0;32mI (85147) RECEIVER: Received -> Seq:42 Temp:29.80 Volt:12.00[0m
+[0;32mI (87147) RECEIVER: Received -> Seq:43 Temp:29.90 Volt:12.00[0m
+[0;32mI (89147) RECEIVER: Received -> Seq:44 Temp:30.00 Volt:12.00[0m
+[0;32mI (91147) RECEIVER: Received -> Seq:45 Temp:30.10 Volt:12.00[0m
+[0;32mI (93147) RECEIVER: Received -> Seq:46 Temp:30.20 Volt:12.00[0m
+[0;32mI (95147) RECEIVER: Received -> Seq:47 Temp:30.30 Volt:12.00[0m
+[0;32mI (97147) RECEIVER: Received -> Seq:48 Temp:30.40 Volt:12.00[0m
+[0;32mI (99147) RECEIVER: Received -> Seq:49 Temp:30.50 Volt:12.00[0m
+[0;32mI (101147) RECEIVER: Received -> Seq:50 Temp:30.60 Volt:12.00[0m
+[0;32mI (103147) RECEIVER: Received -> Seq:51 Temp:30.70 Volt:12.00[0m
+[0;32mI (105147) RECEIVER: Received -> Seq:52 Temp:30.80 Volt:12.00[0m
+[0;32mI (107147) RECEIVER: Received -> Seq:53 Temp:30.90 Volt:12.00[0m
+[0;32mI (109147) RECEIVER: Received -> Seq:54 Temp:31.00 Volt:12.00[0m
+[0;32mI (111147) RECEIVER: Received -> Seq:55 Temp:31.10 Volt:12.00[0m
+[0;32mI (113147) RECEIVER: Received -> Seq:56 Temp:31.20 Volt:12.00[0m
+[0;32mI (115147) RECEIVER: Received -> Seq:57 Temp:31.30 Volt:12.00[0m
+[0;32mI (117147) RECEIVER: Received -> Seq:58 Temp:31.40 Volt:12.00[0m
+[0;32mI (119147) RECEIVER: Received -> Seq:59 Temp:31.50 Volt:12.00[0m
+[0;32mI (121147) RECEIVER: Received -> Seq:60 Temp:31.60 Volt:12.00[0m
+[0;32mI (123147) RECEIVER: Received -> Seq:61 Temp:31.70 Volt:12.00[0m
+[0;32mI (125147) RECEIVER: Received -> Seq:62 Temp:31.80 Volt:12.00[0m
+[0;32mI (127147) RECEIVER: Received -> Seq:63 Temp:31.90 Volt:12.00[0m
+[0;32mI (129147) RECEIVER: Received -> Seq:64 Temp:32.00 Volt:12.00[0m
+[0;32mI (131147) RECEIVER: Received -> Seq:65 Temp:32.10 Volt:12.00[0m
+[0;32mI (133147) RECEIVER: Received -> Seq:66 Temp:32.20 Volt:12.00[0m
+[0;32mI (135147) RECEIVER: Received -> Seq:67 Temp:32.30 Volt:12.00[0m
+[0;32mI (137147) RECEIVER: Received -> Seq:68 Temp:32.40 Volt:12.00[0m
+[0;32mI (139147) RECEIVER: Received -> Seq:69 Temp:32.50 Volt:12.00[0m
+[0;32mI (141147) RECEIVER: Received -> Seq:70 Temp:32.60 Volt:12.00[0m
+[0;32mI (143147) RECEIVER: Received -> Seq:71 Temp:32.70 Volt:12.00[0m
+[0;32mI (145147) RECEIVER: Received -> Seq:72 Temp:32.80 Volt:12.00[0m
+[0;32mI (147147) RECEIVER: Received -> Seq:73 Temp:32.90 Volt:12.00[0m
+[0;32mI (149147) RECEIVER: Received -> Seq:74 Temp:33.00 Volt:12.00[0m
+[0;32mI (151147) RECEIVER: Received -> Seq:75 Temp:33.10 Volt:12.00[0m
+[0;32mI (153147) RECEIVER: Received -> Seq:76 Temp:33.20 Volt:12.00[0m
+[0;32mI (155147) RECEIVER: Received -> Seq:77 Temp:33.30 Volt:12.00[0m
+[0;32mI (157147) RECEIVER: Received -> Seq:78 Temp:33.40 Volt:12.00[0m
+[0;32mI (159147) RECEIVER: Received -> Seq:79 Temp:33.50 Volt:12.00[0m
+[0;32mI (161147) RECEIVER: Received -> Seq:80 Temp:33.60 Volt:12.00[0m
+[0;32mI (163147) RECEIVER: Received -> Seq:81 Temp:33.70 Volt:12.00[0m
+[0;32mI (165147) RECEIVER: Received -> Seq:82 Temp:33.80 Volt:12.00[0m
+[0;32mI (167147) RECEIVER: Received -> Seq:83 Temp:33.90 Volt:12.00[0m
+[0;32mI (169147) RECEIVER: Received -> Seq:84 Temp:34.00 Volt:12.00[0m
+[0;32mI (171147) RECEIVER: Received -> Seq:85 Temp:34.10 Volt:12.00[0m
+[0;32mI (173147) RECEIVER: Received -> Seq:86 Temp:34.20 Volt:12.00[0m
+[0;32mI (175147) RECEIVER: Received -> Seq:87 Temp:34.30 Volt:12.00[0m
+[0;32mI (177147) RECEIVER: Received -> Seq:88 Temp:34.40 Volt:12.00[0m
+[0;32mI (179147) RECEIVER: Received -> Seq:89 Temp:34.50 Volt:12.00[0m
+[0;32mI (181147) RECEIVER: Received -> Seq:90 Temp:34.60 Volt:12.00[0m
+[0;32mI (183147) RECEIVER: Received -> Seq:91 Temp:34.70 Volt:12.00[0m
+[0;32mI (185147) RECEIVER: Received -> Seq:92 Temp:34.80 Volt:12.00[0m
+[0;32mI (187147) RECEIVER: Received -> Seq:93 Temp:34.90 Volt:12.00[0m
+[0;32mI (189147) RECEIVER: Received -> Seq:94 Temp:35.00 Volt:12.00[0m
+[0;32mI (191147) RECEIVER: Received -> Seq:95 Temp:35.10 Volt:12.00[0m
+[0;32mI (193147) RECEIVER: Received -> Seq:96 Temp:35.20 Volt:12.00[0m
+[0;32mI (195147) RECEIVER: Received -> Seq:97 Temp:35.30 Volt:12.00[0m
+[0;32mI (197147) RECEIVER: Received -> Seq:98 Temp:35.40 Volt:12.00[0m
+[0;32mI (199147) RECEIVER: Received -> Seq:99 Temp:35.50 Volt:12.00[0m
+[0;32mI (201147) RECEIVER: Received -> Seq:100 Temp:35.60 Volt:12.00[0m
+[0;32mI (203147) RECEIVER: Received -> Seq:101 Temp:35.70 Volt:12.00[0m
+[0;32mI (205147) RECEIVER: Received -> Seq:102 Temp:35.80 Volt:12.00[0m
+[0;32mI (207147) RECEIVER: Received -> Seq:103 Temp:35.90 Volt:12.00[0m
+[0;32mI (209147) RECEIVER: Received -> Seq:104 Temp:36.00 Volt:12.00[0m
+[0;32mI (211147) RECEIVER: Received -> Seq:105 Temp:36.10 Volt:12.00[0m
+[0;32mI (213147) RECEIVER: Received -> Seq:106 Temp:36.20 Volt:12.00[0m
+[0;32mI (215147) RECEIVER: Received -> Seq:107 Temp:36.30 Volt:12.00[0m
+[0;32mI (217147) RECEIVER: Received -> Seq:108 Temp:36.40 Volt:12.00[0m
+[0;32mI (219147) RECEIVER: Received -> Seq:109 Temp:36.50 Volt:12.00[0m
+[0;32mI (221147) RECEIVER: Received -> Seq:110 Temp:36.60 Volt:12.00[0m
+[0;32mI (223147) RECEIVER: Received -> Seq:111 Temp:36.70 Volt:12.00[0m
+[0;32mI (225147) RECEIVER: Received -> Seq:112 Temp:36.80 Volt:12.00[0m
+[0;32mI (227147) RECEIVER: Received -> Seq:113 Temp:36.90 Volt:12.00[0m
+[0;32mI (229147) RECEIVER: Received -> Seq:114 Temp:37.00 Volt:12.00[0m
+[0;32mI (231147) RECEIVER: Received -> Seq:115 Temp:37.10 Volt:12.00[0m
+[0;32mI (233147) RECEIVER: Received -> Seq:116 Temp:37.20 Volt:12.00[0m
+[0;32mI (235147) RECEIVER: Received -> Seq:117 Temp:37.30 Volt:12.00[0m
+[0;32mI (237147) RECEIVER: Received -> Seq:118 Temp:37.40 Volt:12.00[0m
+[0;32mI (239147) RECEIVER: Received -> Seq:119 Temp:37.50 Volt:12.00[0m
+[0;32mI (241147) RECEIVER: Received -> Seq:120 Temp:37.60 Volt:12.00[0m
+[0;32mI (243147) RECEIVER: Received -> Seq:121 Temp:37.70 Volt:12.00[0m
+[0;32mI (245147) RECEIVER: Received -> Seq:122 Temp:37.80 Volt:12.00[0m
+[0;32mI (247147) RECEIVER: Received -> Seq:123 Temp:37.90 Volt:12.00[0m
+[0;32mI (249147) RECEIVER: Received -> Seq:124 Temp:38.00 Volt:12.00[0m
+[0;32mI (251147) RECEIVER: Received -> Seq:125 Temp:38.10 Volt:12.00[0m
+[0;32mI (253147) RECEIVER: Received -> Seq:126 Temp:38.20 Volt:12.00[0m
+[0;32mI (255147) RECEIVER: Received -> Seq:127 Temp:38.30 Volt:12.00[0m
+[0;32mI (257147) RECEIVER: Received -> Seq:128 Temp:38.40 Volt:12.00[0m
+[0;32mI (259147) RECEIVER: Received -> Seq:129 Temp:38.50 Volt:12.00[0m
+[0;32mI (261147) RECEIVER: Received -> Seq:130 Temp:38.60 Volt:12.00[0m
+[0;32mI (263147) RECEIVER: Received -> Seq:131 Temp:38.70 Volt:12.00[0m
+[0;32mI (265147) RECEIVER: Received -> Seq:132 Temp:38.80 Volt:12.00[0m
+[0;32mI (267147) RECEIVER: Received -> Seq:133 Temp:38.90 Volt:12.00[0m
+[0;32mI (269147) RECEIVER: Received -> Seq:134 Temp:39.00 Volt:12.00[0m
+[0;32mI (271147) RECEIVER: Received -> Seq:135 Temp:39.10 Volt:12.00[0m
+[0;32mI (273147) RECEIVER: Received -> Seq:136 Temp:39.20 Volt:12.00[0m
+[0;32mI (275147) RECEIVER: Received -> Seq:137 Temp:39.30 Volt:12.00[0m
+[0;32mI (277147) RECEIVER: Received -> Seq:138 Temp:39.40 Volt:12.00[0m
+[0;32mI (279147) RECEIVER: Received -> Seq:139 Temp:39.50 Volt:12.00[0m
+[0;32mI (281147) RECEIVER: Received -> Seq:140 Temp:39.60 Volt:12.00[0m
+[0;32mI (283147) RECEIVER: Received -> Seq:141 Temp:39.70 Volt:12.00[0m
+[0;32mI (285147) RECEIVER: Received -> Seq:142 Temp:39.80 Volt:12.00[0m
+[0;32mI (287147) RECEIVER: Received -> Seq:143 Temp:39.90 Volt:12.00[0m
+[0;32mI (289147) RECEIVER: Received -> Seq:144 Temp:40.00 Volt:12.00[0m
+[0;32mI (291147) RECEIVER: Received -> Seq:145 Temp:40.10 Volt:12.00[0m
+[0;32mI (293147) RECEIVER: Received -> Seq:146 Temp:40.20 Volt:12.00[0m
+[0;32mI (295147) RECEIVER: Received -> Seq:147 Temp:40.30 Volt:12.00[0m
+[0;32mI (297147) RECEIVER: Received -> Seq:148 Temp:40.40 Volt:12.00[0m
+[0;32mI (299147) RECEIVER: Received -> Seq:149 Temp:40.50 Volt:12.00[0m
+[0;32mI (301147) RECEIVER: Received -> Seq:150 Temp:40.60 Volt:12.00[0m
+[0;32mI (303147) RECEIVER: Received -> Seq:151 Temp:40.70 Volt:12.00[0m
+[0;32mI (305147) RECEIVER: Received -> Seq:152 Temp:40.80 Volt:12.00[0m
+[0;32mI (307147) RECEIVER: Received -> Seq:153 Temp:40.90 Volt:12.00[0m
+[0;32mI (309147) RECEIVER: Received -> Seq:154 Temp:41.00 Volt:12.00[0m
+[0;32mI (311147) RECEIVER: Received -> Seq:155 Temp:41.10 Volt:12.00[0m
+[0;32mI (313147) RECEIVER: Received -> Seq:156 Temp:41.20 Volt:12.00[0m
+[0;32mI (315147) RECEIVER: Received -> Seq:157 Temp:41.30 Volt:12.00[0m
+[0;32mI (317147) RECEIVER: Received -> Seq:158 Temp:41.40 Volt:12.00[0m
+[0;32mI (319147) RECEIVER: Received -> Seq:159 Temp:41.50 Volt:12.00[0m
+[0;32mI (321147) RECEIVER: Received -> Seq:160 Temp:41.60 Volt:12.00[0m
+[0;32mI (323147) RECEIVER: Received -> Seq:161 Temp:41.70 Volt:12.00[0m
+[0;32mI (325147) RECEIVER: Received -> Seq:162 Temp:41.80 Volt:12.00[0m
+[0;32mI (327147) RECEIVER: Received -> Seq:163 Temp:41.90 Volt:12.00[0m
+[0;32mI (329147) RECEIVER: Received -> Seq:164 Temp:42.00 Volt:12.00[0m
+[0;32mI (331147) RECEIVER: Received -> Seq:165 Temp:42.10 Volt:12.00[0m
+[0;32mI (333147) RECEIVER: Received -> Seq:166 Temp:42.20 Volt:12.00[0m
+[0;32mI (335147) RECEIVER: Received -> Seq:167 Temp:42.30 Volt:12.00[0m
+[0;32mI (337147) RECEIVER: Received -> Seq:168 Temp:42.40 Volt:12.00[0m
+[0;32mI (339147) RECEIVER: Received -> Seq:169 Temp:42.50 Volt:12.00[0m
+[0;32mI (341147) RECEIVER: Received -> Seq:170 Temp:42.60 Volt:12.00[0m
+[0;32mI (343147) RECEIVER: Received -> Seq:171 Temp:42.70 Volt:12.00[0m
+[0;32mI (345147) RECEIVER: Received -> Seq:172 Temp:42.80 Volt:12.00[0m
+[0;32mI (347147) RECEIVER: Received -> Seq:173 Temp:42.90 Volt:12.00[0m
+[0;32mI (349147) RECEIVER: Received -> Seq:174 Temp:43.00 Volt:12.00[0m
+[0;32mI (351147) RECEIVER: Received -> Seq:175 Temp:43.10 Volt:12.00[0m
+[0;32mI (353147) RECEIVER: Received -> Seq:176 Temp:43.20 Volt:12.00[0m
+[0;32mI (355147) RECEIVER: Received -> Seq:177 Temp:43.30 Volt:12.00[0m
+[0;32mI (357147) RECEIVER: Received -> Seq:178 Temp:43.40 Volt:12.00[0m

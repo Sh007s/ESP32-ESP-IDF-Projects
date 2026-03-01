@@ -1,0 +1,15 @@
+Command: ninja flash
+[1/5] Performing build step for 'bootloader'
+[1/1] cd /home/shan1234/Desktop/esp_projects/ESPNOW/ESPNOW_Reciver/build/bootloader && /home/shan1234/.espressif/python_env/idf6.1_py3.12_env/bin/python /home/shan1234/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/shan1234/Desktop/esp_projects/ESPNOW/ESPNOW_Reciver/build/bootloader/bootloader.bin
+Bootloader binary size 0x6610 bytes. 0x9f0 bytes (9%) free.
+[2/5] No install step for 'bootloader'
+[3/5] cd /home/shan1234/Desktop/esp_projects/ESPNOW/ESPNOW_Reciver/build && /home/shan1234/.espressif/python_env/idf6.1_py3.12_env/bin/python /home/shan1234/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/shan1234/Desktop/esp_projects/ESPNOW/ESPNOW_Reciver/build/partition_table/partition-table.bin /home/shan1234/Desktop/esp_projects/ESPNOW/ESPNOW_Reciver/build/ESPNOW_Reciver.bin
+ESPNOW_Reciver.bin binary size 0xb1ad0 bytes. Smallest app partition is 0x100000 bytes. 0x4e530 bytes (31%) free.
+[4/5] Completed 'bootloader'
+[4/5] Running utility command for flash
+esptool --chip esp32 -p /dev/ttyACM0 -b 460800 --before=default-reset --after=hard-reset write-flash --flash-mode dio --flash-freq 40m --flash-size 2MB 0x1000 bootloader/bootloader.bin 0x8000 partition_table/partition-table.bin 0x10000 ESPNOW_Reciver.bin
+esptool v5.2.dev4
+Serial port /dev/ttyACM0:
+[31mFAILED: [0mCMakeFiles/flash.util 
+cd /home/shan1234/Desktop/esp_projects/ESPNOW/ESPNOW_Reciver && /usr/bin/cmake -D IDF_PATH=/home/shan1234/esp/esp-idf -D "SERIAL_TOOL=/home/shan1234/.espressif/python_env/idf6.1_py3.12_env/bin/python;-m;esptool;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default-reset;--after=hard-reset;write-flash;@flash_args" -D WORKING_DIRECTORY=/home/shan1234/Desktop/esp_projects/ESPNOW/ESPNOW_Reciver/build -P /home/shan1234/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+ninja: build stopped: subcommand failed.

@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/shan1234/Desktop/esp_projects/ESPNOW/ESPNOW_Reciver/build/CMakeFiles/bootloader
+/home/shan1234/Desktop/esp_projects/ESPNOW/ESPNOW_Reciver/build/CMakeFiles/bootloader.rule
+/home/shan1234/Desktop/esp_projects/ESPNOW/ESPNOW_Reciver/build/CMakeFiles/bootloader-complete.rule
+/home/shan1234/Desktop/esp_projects/ESPNOW/ESPNOW_Reciver/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/shan1234/Desktop/esp_projects/ESPNOW/ESPNOW_Reciver/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/shan1234/Desktop/esp_projects/ESPNOW/ESPNOW_Reciver/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/shan1234/Desktop/esp_projects/ESPNOW/ESPNOW_Reciver/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/shan1234/Desktop/esp_projects/ESPNOW/ESPNOW_Reciver/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/shan1234/Desktop/esp_projects/ESPNOW/ESPNOW_Reciver/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/shan1234/Desktop/esp_projects/ESPNOW/ESPNOW_Reciver/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

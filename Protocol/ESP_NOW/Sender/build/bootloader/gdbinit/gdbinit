@@ -1,0 +1,2 @@
+source /home/shan1234/Desktop/esp_projects/ESPNOW/ESPNOW_Sender/build/bootloader/gdbinit/symbols
+source /home/shan1234/Desktop/esp_projects/ESPNOW/ESPNOW_Sender/build/bootloader/gdbinit/connect

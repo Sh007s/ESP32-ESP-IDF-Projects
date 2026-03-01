@@ -1,0 +1,214 @@
+Command: /home/shan1234/.espressif/python_env/idf6.1_py3.12_env/bin/python /home/shan1234/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/shan1234/Desktop/esp_projects/ESPNOW/ESPNOW_Reciver/build/ESPNOW_Reciver.elf /home/shan1234/Desktop/esp_projects/ESPNOW/ESPNOW_Reciver/build/bootloader/bootloader.elf -m '/home/shan1234/.espressif/python_env/idf6.1_py3.12_env/bin/python' '/home/shan1234/esp/esp-idf/tools/idf.py' '-p' '/dev/ttyUSB0'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0040,len:6272
+load:0x40078000,len:15848
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v6.1-dev-2441-gffb63db38b 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Feb 28 2026 19:05:21[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=18884h (100484) map[0m
+[0;32mI (124) esp_image: segment 1: paddr=000288ac vaddr=3ffb0000 size=044f8h ( 17656) load[0m
+[0;32mI (131) esp_image: segment 2: paddr=0002cdac vaddr=40080000 size=0326ch ( 12908) load[0m
+[0;32mI (136) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=7fb98h (523160) map[0m
+[0;32mI (323) esp_image: segment 4: paddr=000afbc0 vaddr=4008326c size=122d0h ( 74448) load[0m
+[0;32mI (353) esp_image: segment 5: paddr=000c1e98 vaddr=50000000 size=00028h (    40) load[0m
+[0;32mI (364) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (364) boot: Disabling RNG early entropy source...[0m
+[0;32mI (375) cpu_start: Multicore app[0m
+[0;32mI (383) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (384) cpu_start: Pro cpu start user code[0m
+[0;32mI (384) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (386) app_init: Application information:[0m
+[0;32mI (389) app_init: Project name:     ESPNOW_Reciver[0m
+[0;32mI (394) app_init: App version:      1[0m
+[0;32mI (397) app_init: Compile time:     Feb 28 2026 19:05:46[0m
+[0;32mI (402) app_init: ELF file SHA256:  7e2cdb94d...[0m
+[0;32mI (407) app_init: ESP-IDF:          v6.1-dev-2441-gffb63db38b[0m
+[0;32mI (412) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (416) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (420) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (424) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (430) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (435) heap_init: At 3FFB89F0 len 00027610 (157 KiB): DRAM[0m
+[0;32mI (440) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (446) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (451) heap_init: At 4009553C len 0000AAC4 (42 KiB): IRAM[0m
+[0;32mI (458) spi_flash: detected chip: generic[0m
+[0;32mI (460) spi_flash: flash io: dio[0m
+[0;33mW (463) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (477) main_task: Started on CPU0[0m
+[0;32mI (487) main_task: Calling app_main()[0m
+[0;32mI (507) wifi:wifi driver task: 3ffbfeec, prio:23, stack:6656, core=0[0m
+[0;32mI (507) wifi:wifi firmware version: 3b5cc83[0m
+[0;32mI (507) wifi:wifi certification version: v7.0[0m
+[0;32mI (507) wifi:config NVS flash: enabled[0m
+[0;32mI (507) wifi:config nano formatting: disabled[0m
+[0;32mI (517) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (517) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (527) wifi:Init management short buffer num: 32[0m
+[0;32mI (527) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (537) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (537) wifi:Init static rx buffer num: 10[0m
+[0;32mI (537) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (547) wifi_init: rx ba win: 6[0m
+[0;32mI (547) wifi_init: accept mbox: 6[0m
+[0;32mI (547) wifi_init: tcpip mbox: 32[0m
+[0;32mI (557) wifi_init: udp mbox: 6[0m
+[0;32mI (557) wifi_init: tcp mbox: 6[0m
+[0;32mI (557) wifi_init: tcp tx win: 5760[0m
+[0;32mI (567) wifi_init: tcp rx win: 5760[0m
+[0;32mI (567) wifi_init: tcp mss: 1440[0m
+[0;32mI (567) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (577) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (577) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (667) wifi:mode : sta (fc:b4:67:4e:de:34)[0m
+[0;32mI (667) wifi:enable tsf[0m
+[0;32mI (667) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (667) RECEIVER: Sending Pair Request...[0m
+[0;32mI (667) RECEIVER: Delivery Success[0m
+[0;32mI (677) RECEIVER: ACK received! Paired successfully.[0m
+[0;32mI (677) RECEIVER: Sender added as peer.[0m
+[0;32mI (677) RECEIVER: Received -> Seq:0 Temp:25.60 Volt:12.00[0m
+[0;32mI (677) RECEIVER: Sent -> Seq:0 Temp:31.00 Volt:11.50[0m
+[0;32mI (687) RECEIVER: Delivery Success[0m
+[0;32mI (2667) RECEIVER: Received -> Seq:1 Temp:25.70 Volt:12.00[0m
+[0;32mI (2687) RECEIVER: Sent -> Seq:1 Temp:32.00 Volt:11.50[0m
+[0;32mI (2687) RECEIVER: Delivery Success[0m
+[0;32mI (3667) main_task: Returned from app_main()[0m
+[0;32mI (4667) RECEIVER: Received -> Seq:2 Temp:25.80 Volt:12.00[0m
+[0;32mI (4687) RECEIVER: Sent -> Seq:2 Temp:33.00 Volt:11.50[0m
+[0;32mI (4687) RECEIVER: Delivery Success[0m
+[0;32mI (6667) RECEIVER: Received -> Seq:3 Temp:25.90 Volt:12.00[0m
+[0;32mI (6687) RECEIVER: Sent -> Seq:3 Temp:34.00 Volt:11.50[0m
+[0;32mI (6687) RECEIVER: Delivery Success[0m
+[0;32mI (8667) RECEIVER: Received -> Seq:4 Temp:26.00 Volt:12.00[0m
+[0;32mI (8687) RECEIVER: Sent -> Seq:4 Temp:35.00 Volt:11.50[0m
+[0;32mI (8687) RECEIVER: Delivery Success[0m
+[0;32mI (10667) RECEIVER: Received -> Seq:5 Temp:26.10 Volt:12.00[0m
+[0;32mI (10687) RECEIVER: Sent -> Seq:5 Temp:36.00 Volt:11.50[0m
+[0;32mI (10687) RECEIVER: Delivery Success[0m
+[0;32mI (12667) RECEIVER: Received -> Seq:6 Temp:26.20 Volt:12.00[0m
+[0;32mI (12687) RECEIVER: Sent -> Seq:6 Temp:37.00 Volt:11.50[0m
+[0;32mI (12687) RECEIVER: Delivery Success[0m
+[0;32mI (14667) RECEIVER: Received -> Seq:7 Temp:26.30 Volt:12.00[0m
+[0;32mI (14687) RECEIVER: Sent -> Seq:7 Temp:38.00 Volt:11.50[0m
+[0;32mI (14687) RECEIVER: Delivery Success[0m
+[0;32mI (16667) RECEIVER: Received -> Seq:8 Temp:26.40 Volt:12.00[0m
+[0;32mI (16687) RECEIVER: Sent -> Seq:8 Temp:39.00 Volt:11.50[0m
+[0;32mI (16687) RECEIVER: Delivery Success[0m
+[0;32mI (18677) RECEIVER: Received -> Seq:9 Temp:26.50 Volt:12.00[0m
+[0;32mI (18687) RECEIVER: Sent -> Seq:9 Temp:40.00 Volt:11.50[0m
+[0;32mI (18687) RECEIVER: Delivery Success[0m
+[0;32mI (20667) RECEIVER: Received -> Seq:10 Temp:26.60 Volt:12.00[0m
+[0;32mI (20687) RECEIVER: Sent -> Seq:10 Temp:41.00 Volt:11.50[0m
+[0;32mI (20687) RECEIVER: Delivery Success[0m
+[0;32mI (22667) RECEIVER: Received -> Seq:11 Temp:26.70 Volt:12.00[0m
+[0;32mI (22687) RECEIVER: Sent -> Seq:11 Temp:42.00 Volt:11.50[0m
+[0;32mI (22687) RECEIVER: Delivery Success[0m
+[0;32mI (24667) RECEIVER: Received -> Seq:12 Temp:26.80 Volt:12.00[0m
+[0;32mI (24687) RECEIVER: Sent -> Seq:12 Temp:43.00 Volt:11.50[0m
+[0;32mI (24687) RECEIVER: Delivery Success[0m
+[0;32mI (26667) RECEIVER: Received -> Seq:13 Temp:26.90 Volt:12.00[0m
+[0;32mI (26687) RECEIVER: Sent -> Seq:13 Temp:44.00 Volt:11.50[0m
+[0;32mI (26687) RECEIVER: Delivery Success[0m
+[0;32mI (28667) RECEIVER: Received -> Seq:14 Temp:27.00 Volt:12.00[0m
+[0;32mI (28687) RECEIVER: Sent -> Seq:14 Temp:45.00 Volt:11.50[0m
+[0;32mI (28687) RECEIVER: Delivery Success[0m
+[0;32mI (30667) RECEIVER: Received -> Seq:15 Temp:27.10 Volt:12.00[0m
+[0;32mI (30687) RECEIVER: Sent -> Seq:15 Temp:46.00 Volt:11.50[0m
+[0;32mI (30687) RECEIVER: Delivery Success[0m
+[0;32mI (32667) RECEIVER: Received -> Seq:16 Temp:27.20 Volt:12.00[0m
+[0;32mI (32687) RECEIVER: Sent -> Seq:16 Temp:47.00 Volt:11.50[0m
+[0;32mI (32687) RECEIVER: Delivery Success[0m
+[0;32mI (34677) RECEIVER: Received -> Seq:17 Temp:27.30 Volt:12.00[0m
+[0;32mI (34687) RECEIVER: Sent -> Seq:17 Temp:48.00 Volt:11.50[0m
+[0;32mI (34687) RECEIVER: Delivery Success[0m
+[0;32mI (36667) RECEIVER: Received -> Seq:18 Temp:27.40 Volt:12.00[0m
+[0;32mI (36687) RECEIVER: Sent -> Seq:18 Temp:49.00 Volt:11.50[0m
+[0;32mI (36687) RECEIVER: Delivery Success[0m
+[0;32mI (38667) RECEIVER: Received -> Seq:19 Temp:27.50 Volt:12.00[0m
+[0;32mI (38687) RECEIVER: Sent -> Seq:19 Temp:50.00 Volt:11.50[0m
+[0;32mI (38687) RECEIVER: Delivery Success[0m
+[0;32mI (40677) RECEIVER: Received -> Seq:20 Temp:27.60 Volt:12.00[0m
+[0;32mI (40687) RECEIVER: Sent -> Seq:20 Temp:51.00 Volt:11.50[0m
+[0;32mI (40687) RECEIVER: Delivery Success[0m
+[0;32mI (42667) RECEIVER: Received -> Seq:21 Temp:27.70 Volt:12.00[0m
+[0;32mI (42687) RECEIVER: Sent -> Seq:21 Temp:52.00 Volt:11.50[0m
+[0;32mI (42687) RECEIVER: Delivery Success[0m
+[0;32mI (44667) RECEIVER: Received -> Seq:22 Temp:27.80 Volt:12.00[0m
+[0;32mI (44687) RECEIVER: Sent -> Seq:22 Temp:53.00 Volt:11.50[0m
+[0;32mI (44687) RECEIVER: Delivery Success[0m
+[0;32mI (46667) RECEIVER: Received -> Seq:23 Temp:27.90 Volt:12.00[0m
+[0;32mI (46687) RECEIVER: Sent -> Seq:23 Temp:54.00 Volt:11.50[0m
+[0;32mI (46687) RECEIVER: Delivery Success[0m
+[0;32mI (48667) RECEIVER: Received -> Seq:24 Temp:28.00 Volt:12.00[0m
+[0;32mI (48687) RECEIVER: Sent -> Seq:24 Temp:55.00 Volt:11.50[0m
+[0;32mI (48687) RECEIVER: Delivery Success[0m
+[0;32mI (50667) RECEIVER: Received -> Seq:25 Temp:28.10 Volt:12.00[0m
+[0;32mI (50687) RECEIVER: Sent -> Seq:25 Temp:56.00 Volt:11.50[0m
+[0;32mI (50687) RECEIVER: Delivery Success[0m
+[0;32mI (52677) RECEIVER: Received -> Seq:26 Temp:28.20 Volt:12.00[0m
+[0;32mI (52687) RECEIVER: Sent -> Seq:26 Temp:57.00 Volt:11.50[0m
+[0;32mI (52687) RECEIVER: Delivery Success[0m
+[0;32mI (54667) RECEIVER: Received -> Seq:27 Temp:28.30 Volt:12.00[0m
+[0;32mI (54687) RECEIVER: Sent -> Seq:27 Temp:58.00 Volt:11.50[0m
+[0;32mI (54687) RECEIVER: Delivery Success[0m
+[0;32mI (56667) RECEIVER: Received -> Seq:28 Temp:28.40 Volt:12.00[0m
+[0;32mI (56687) RECEIVER: Sent -> Seq:28 Temp:59.00 Volt:11.50[0m
+[0;32mI (56687) RECEIVER: Delivery Success[0m
+[0;32mI (58667) RECEIVER: Received -> Seq:29 Temp:28.50 Volt:12.00[0m
+[0;32mI (58687) RECEIVER: Sent -> Seq:29 Temp:60.00 Volt:11.50[0m
+[0;32mI (58687) RECEIVER: Delivery Success[0m
+[0;32mI (60667) RECEIVER: Received -> Seq:30 Temp:28.60 Volt:12.00[0m
+[0;32mI (60687) RECEIVER: Sent -> Seq:30 Temp:61.00 Volt:11.50[0m
+[0;32mI (60687) RECEIVER: Delivery Success[0m
+[0;32mI (62667) RECEIVER: Received -> Seq:31 Temp:28.70 Volt:12.00[0m
+[0;32mI (62687) RECEIVER: Sent -> Seq:31 Temp:62.00 Volt:11.50[0m
+[0;32mI (62687) RECEIVER: Delivery Success[0m
+[0;32mI (64667) RECEIVER: Received -> Seq:32 Temp:28.80 Volt:12.00[0m
+[0;32mI (64687) RECEIVER: Sent -> Seq:32 Temp:63.00 Volt:11.50[0m
+[0;32mI (64687) RECEIVER: Delivery Success[0m
+[0;32mI (66667) RECEIVER: Received -> Seq:33 Temp:28.90 Volt:12.00[0m
+[0;32mI (66687) RECEIVER: Sent -> Seq:33 Temp:64.00 Volt:11.50[0m
+[0;32mI (66687) RECEIVER: Delivery Success[0m
+[0;32mI (68667) RECEIVER: Received -> Seq:34 Temp:29.00 Volt:12.00[0m
+[0;32mI (68687) RECEIVER: Sent -> Seq:34 Temp:65.00 Volt:11.50[0m
+[0;32mI (68687) RECEIVER: Delivery Success[0m
+[0;32mI (70667) RECEIVER: Received -> Seq:35 Temp:29.10 Volt:12.00[0m
+[0;32mI (70687) RECEIVER: Sent -> Seq:35 Temp:66.00 Volt:11.50[0m
+[0;32mI (70687) RECEIVER: Delivery Success[0m
+[0;32mI (72677) RECEIVER: Received -> Seq:36 Temp:29.20 Volt:12.00[0m
+[0;32mI (72687) RECEIVER: Sent -> Seq:36 Temp:67.00 Volt:11.50[0m
+[0;32mI (72687) RECEIVER: Delivery Success[0m
+[0;32mI (74677) RECEIVER: Received -> Seq:37 Temp:29.30 Volt:12.00[0m
+[0;32mI (74687) RECEIVER: Sent -> Seq:37 Temp:68.00 Volt:11.50[0m
+[0;32mI (74687) RECEIVER: Delivery Success[0m
+[0;32mI (76667) RECEIVER: Received -> Seq:38 Temp:29.40 Volt:12.00[0m
+[0;32mI (76687) RECEIVER: Sent -> Seq:38 Temp:69.00 Volt:11.50[0m
+[0;32mI (76687) RECEIVER: Delivery Success[0m
+[0;32mI (78667) RECEIVER: Received -> Seq:39 Temp:29.50 Volt:12.00[0m
+[0;32mI (78687) RECEIVER: Sent -> Seq:39 Temp:70.00 Volt:11.50[0m
+[0;32mI (78687) RECEIVER: Delivery Success[0m
+[0;32mI (80667) RECEIVER: Received -> Seq:40 Temp:29.60 Volt:12.00[0m
+[0;32mI (80687) RECEIVER: Sent -> Seq:40 Temp:71.00 Volt:11.50[0m
+[0;32mI (80687) RECEIVER: Delivery Success[0m
+[0;32mI (82677) RECEIVER: Received -> Seq:41 Temp:29.70 Volt:12.00[0m
+[0;32mI (82687) RECEIVER: Sent -> Seq:41 Temp:72.00 Volt:11.50[0m
+[0;32mI (82687) RECEIVER: Delivery Success[0m
